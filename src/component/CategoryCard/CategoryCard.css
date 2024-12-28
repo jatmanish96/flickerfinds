@@ -1,0 +1,45 @@
+.category-card {
+    display: flex; 
+    justify-content: space-between;  /* Distribute items evenly with space between them */
+    padding: 10px;
+    width: 90%;  /* Set width to 90% of its parent */
+    max-width: 1200px; /* Optionally, add a max-width if needed */
+    height: calc(100% - 16px);
+    align-items: center;
+    margin: 20px auto; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    background-color: white;
+    font-family: "Open Sans", serif;
+    text-decoration: none;
+}
+
+
+
+.category-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin: auto;
+}
+
+.category-item a{
+    text-decoration: none;
+}
+
+.category-item-link {
+    gap: 8px;  /* Reduce gap between image and text */
+}
+
+.category-item-link img {
+    width: 60px;
+    height: auto;
+   
+}
+
+.categorytext h4 {
+    color: #333;
+    margin: 0;  /* Remove any default margin for the h4 element */
+    padding: 0;  /* Ensure no padding affects spacing */
+}
+

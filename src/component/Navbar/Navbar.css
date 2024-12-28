@@ -1,0 +1,175 @@
+.navbar{
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+      padding: 10px;
+      height: auto;
+      gap: 20px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      border-radius: 5px;
+      background-color: white;
+}
+.nav-logo{
+     display: flex;
+     justify-content: space-around;
+     align-items: center;
+     gap: 35px;
+}.nav-logo img{
+    width: 35px;
+    height: 35px;
+}
+.nav-logo p{
+    color: #171717;
+    font-size: 20px;
+    font-size: 300;
+ 
+}
+
+.search-container {
+  display: flex;
+  align-items: center;
+  background-color: white;
+  border-radius: 5px;
+  gap: 10px;
+}
+
+.searchIcon{
+    color: #f57f17;
+    width: 20px;
+    height: auto;
+}
+
+.search-bar {
+  width: 100%;
+  padding: 12px;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  outline: none;
+}
+
+.search-button {
+  background-color: #ff9f00;
+  color: white;
+  border: none;
+  padding: 12px 18px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.search-button:hover {
+  background-color: #f57f17;
+}
+
+.login-section{
+    display: flex;
+    align-items: center;
+    background-color: white;
+    border-radius: 5px;
+    gap: 35px;
+}
+.login-button{
+    display: flex;
+    text-align: center;
+    align-items: center;   
+    gap: 10px;
+}
+.loginIcon{
+    display: flex;
+    align-items: center;
+    color: #f57f17;
+    width: 20px;
+    height: auto;
+}
+.downIcon{
+    display: flex;
+    align-items: center;
+    color: #f57f17;
+    width: 20px;
+    height: auto;
+}
+
+.cart-button{
+    display: flex;
+    align-items: center;
+    text-align: center;   
+    gap: 10px;
+}
+.cartIcon{
+    display: flex;
+    align-items: center;
+    color: #f57f17;
+    width: 20px;
+    height: auto;
+}
+.seller-button{
+    display: flex;
+    align-items: center;   
+    text-align: center;
+    gap: 10px;
+}
+.sellerIcon{  
+    display: flex;
+    align-items: center;
+    color: #f57f17;
+    width: 20px;
+    height: auto;
+}
+.dot-button{
+    display: flex;
+    align-items: center;   
+    gap: 10px;
+}
+.dotIcon{
+    display: flex;
+    align-items: center;
+    color: #f57f17;
+    width: 20px;
+    height: auto;
+}
+
+.text-content{
+    padding-bottom: 4px;
+}
+.login-dropdown{
+    position: absolute; 
+    top: 60px; 
+    left: auto;
+    background-color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    width: 200px;
+    padding: 10px 0;
+    z-index: 9999;
+    
+}
+
+.login-button:hover{
+    color: #f57f17;
+}
+
+.login-dropdown ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+  }
+  .dropdown-item {
+    display: block;
+    padding: 10px 20px;
+    color: #171717;
+    text-decoration: none;
+    font-size: 14px;
+  }
+  .dropdown-item:hover {
+    color: #f57f17;
+  }
+  .dropdownitem{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .login-section a{
+    text-decoration: none;
+    color: #171717;
+  }

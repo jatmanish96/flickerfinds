@@ -1,0 +1,13 @@
+.footer-container{
+    display: flex; 
+    justify-content: space-between;  /* Distribute items evenly with space between them */
+    padding: 10px;
+    align-items: center;
+    margin: 20px auto; 
+    height: auto;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    background-color: #002f6c;
+    font-family: "Open Sans", serif;
+    text-decoration: none;
+}
