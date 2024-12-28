@@ -1,0 +1,261 @@
+/* Cart.css */
+.order-container{
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+
+.order-container-left{
+    display: flex;
+    flex-direction: column;
+    width: 65%;
+    position: relative;
+}
+.order-container-right{
+    display: flex;
+    flex-direction: column;
+    width: 25%;
+    margin-top: 0px;
+    margin-left: 20px;
+    position: sticky;
+}
+.address-container{ 
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin-top: 20px;
+    margin-left: 20px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    background-color: white;
+}
+.address-container span{
+    color: black;
+    font-size: 16px;
+}
+
+.address-container button {
+    background-color: white;
+    color: #f57f17;
+    padding: 10px 20px; 
+    border: none;
+    border-radius: 8px; 
+    cursor: pointer;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1); 
+    font-size: 16px; 
+    transition: all 0.3s ease; 
+    display: inline-block; 
+    margin-left: auto; 
+    margin-right: 0; 
+    text-align: center; 
+}
+
+/* Hover and Focus Effects */
+.address-container button:hover,
+.address-container button:focus {
+    background-color: #f57f17; /* Change background to the button color */
+    color: white; /* Change text color to white when hovering */
+    box-shadow: 0px 6px 20px rgba(0, 0, 0, 0.2); /* Slightly more intense shadow on hover */
+    transform: translateY(-2px); /* Slight lift effect */
+}
+
+/* Active (pressed) Effect */
+.address-container button:active {
+    transform: translateY(1px); /* Button will slightly "press down" on click */
+    box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.15); /* Slightly softer shadow */
+}
+
+
+.cart-container {
+    max-width: 1200px;
+    margin-top: 20px;
+    margin-left: 20px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    background-color: white;
+  }
+  
+  .cart-container h2 {
+    text-align: center;
+  }
+  
+  .cart-items {
+    margin-top: 20px;
+  }
+  
+  .cart-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  .cart-item .item-details {
+    flex: 1;
+  }
+  
+  .cart-item h3 {
+    margin: 0;
+    font-size: 1.2rem;
+  }
+  
+  .cart-item .remove-item {
+    background-color: #ff4d4d;
+    color: white;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .cart-item .remove-item:hover {
+    background-color: #e60000;
+  }
+  
+  .cart-summary {
+    margin-top: 20px;
+    text-align: center;
+  }
+  
+  .cart-summary p {
+    font-size: 1.2rem;
+    font-weight: bold;
+  }
+  
+  .cart-summary .place-order {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    font-size: 1rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .cart-summary .place-order:hover {
+    background-color: #45a049;
+  }
+  
+  .price-details-section{
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 100%;
+    max-width: 400px;
+    margin: 20px;
+  }
+
+  .price-details-section h3 {
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 15px;
+  }
+
+
+  .price-details {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  /* Style for individual price items */
+  .price-item {
+    display: flex;
+    justify-content: space-between;
+    font-size: 1rem;
+    padding: 8px 0;
+    border-bottom: 1px solid #e0e0e0;
+  }
+  
+  .price-item span {
+    color: #333;
+  }
+  
+  .discount, .coupons {
+    color: #d32f2f; /* Red for discount and coupons */
+  }
+  
+  .platform-fee, .delivery-charges {
+    color: #1976d2; /* Blue for platform fee and delivery charges */
+  }
+  
+  .free {
+    font-weight: bold;
+    color: green;
+  }
+  
+  /* Style for total amount section */
+  .total-amount {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #333;
+    padding: 12px 0;
+    border-top: 2px solid #333;
+    border-bottom: 2px solid #333;
+    margin-top: 10px;
+  }
+  
+  /* Style for the savings section */
+  .savings {
+    font-size: 1rem;
+    font-weight: bold;
+    color: #388e3c; /* Green for savings */
+    margin-top: 15px;
+    text-align: center;
+  }
+
+  .order-footer{
+    display: flex;
+    width: 100%;
+    height: 100px;
+    margin-top: 40px;
+    border-top: 1px solid lightgrey;
+  }
+
+  .cart-order-btn{
+    margin-top: 10px;
+    display: flex;
+    justify-content: end;
+  }
+
+  .cart-order-btn span {
+    color: #f57f17;
+    font-size: 20px;
+    font-weight: bold;
+  }
+  .cart-order-btn button{
+    width: 200px;
+    height: 50px;
+    border: 1px solid lightgray;
+    border-radius: 3px;
+    background-color: white;
+  }
+
+  .cart-order-btn button{
+    color: #f57f17;
+  }
+  .cart-order-btn button:hover{
+    color: #f57f17;
+  }
+
+  
+  /* Optional: Add a little responsiveness */
+  @media (max-width: 480px) {
+    .price-details-section {
+      padding: 15px;
+    }
+  
+    .price-details-section h3 {
+      font-size: 1.25rem;
+    }
+  
+    .price-item {
+      font-size: 0.9rem;
+    }
+}

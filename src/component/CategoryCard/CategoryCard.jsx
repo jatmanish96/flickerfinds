@@ -12,16 +12,10 @@ import fashlogo from '../../assests/consumption.png'
 const CategoryCard = () => {
 
     const location = useLocation();
-    // Check if the current route is "/login"
-    const isLoginRoute = location.pathname === "/login";
-    const isSignUpRoute = location.pathname === "/signup";
-    if(isLoginRoute){
-        return null;
+    const hideNavbarRoutes = ["/login", "/signup", "/orders"];
+    if (hideNavbarRoutes.includes(location.pathname)) {
+      return null; // Hide Navbar
     }
-    if(isSignUpRoute){
-        return null;
-    }
-
     return (
         <>
             <div className="category-card">

@@ -1,8 +1,11 @@
 import React, { useState, useEffect } from 'react';
+import { Link ,useLocation} from 'react-router-dom';
 import './ImageSlider.css'; 
 
 const ImageSlider = () => {
     // Image sources
+    const location = useLocation();
+    const hideNavbarRoutes = ["/login", "/signup", "/orders"];
     const images = [
         'https://rukminim1.flixcart.com/fk-p-flap/1620/200/image/6e5064d8c01aa70d.jpg?q=20',
         'https://rukminim2.flixcart.com/fk-p-flap/3376/560/image/c886e3f9a30fee79.png?q=50',
@@ -31,6 +34,9 @@ const ImageSlider = () => {
         return () => clearInterval(interval);
     }, []);
 
+    if (hideNavbarRoutes.includes(location.pathname)) {
+        return null; // Hide Navbar
+      }
     return (
         <div className="slider-container">
             {/* Image Slider */}

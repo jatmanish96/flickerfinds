@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import './Navbar.css';
 import logo from '../../assests/logo.png'; // Update this path with your actual logo
 import { CiShoppingCart } from "react-icons/ci"; // Cart icon from react-icons
-import { Link } from 'react-router-dom';
+import { Link, useLocation } from 'react-router-dom';
 import { fetchCategories } from "../../services/CategoryService"; // Assuming you have this service
 import { IoSearch } from "react-icons/io5";
 import { FaRegUserCircle } from "react-icons/fa";
@@ -16,35 +16,13 @@ import { IoSettingsOutline } from "react-icons/io5";
 
 
 const Navbar = () => {
+
+ 
+
   const [isLoginDropdownOpen, setIsLoginDropdownOpen] = useState(false);
-  const handleLoginHover = () => {
-    setIsLoginDropdownOpen(true);
-  };
+  const handleLoginHover = () => setIsLoginDropdownOpen(true);
+  const handleLoginLeave = () => setIsLoginDropdownOpen(false);
 
-  const handleLoginLeave = () => {
-    setIsLoginDropdownOpen(false);
-  };
-
-  // Fetch categories when the component mounts
-  // useEffect(() => {
-  //   const loadCategories = async () => {
-  //     try {
-  //       setLoading(true);
-  //       const data = await fetchCategories(); // Fetch categories from API
-  //       setCategories(data);
-  //     } catch (error) {
-  //       setError("Failed to load categories");
-  //     } finally {
-  //       setLoading(false);
-  //     }
-  //   };
-
-  //   loadCategories();
-  // }, []);
-
-  // const toggleMobileMenu = () => {
-  //   setIsMobileMenuOpen(!isMobileMenuOpen); // Toggle the mobile menu visibility
-  // };
 
   return (
     <>
@@ -81,7 +59,7 @@ const Navbar = () => {
             </div>
           )}
 
-          <Link to=""> <div className="cart-button">
+          <Link to="/orders"> <div className="cart-button">
           <div className="cartIcon">
            <MdOutlineShoppingCart />
           </div> <div className="text-content">Cart</div>
