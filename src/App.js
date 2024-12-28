@@ -9,6 +9,7 @@ import CategoryCard from './component/CategoryCard/CategoryCard';
 import LoginPage from './Pages/Login/LoginPage';
 import Footer from './component/Footer/Footer';
 import SignUpPage from './Pages/SignUp/SignUpPage';
+import ImageSlider from './component/ImageSlider/ImageSlider';
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
      <BrowserRouter>
     <Navbar />
     <CategoryCard/>
+    <ImageSlider/>
     <Routes>
       <Route path="/"></Route>
       <Route path='/login' element={<LoginPage/>}/>

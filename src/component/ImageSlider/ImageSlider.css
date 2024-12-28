@@ -1,0 +1,28 @@
+/* ImageSlider.css */
+.slider-container {
+    display: flex;   /* Distribute items evenly with space between them */
+    padding: 10px;
+    width: 90%;  /* Set width to 90% of its parent */
+    max-width: 1200px; /* Optionally, add a max-width if needed */
+    height: calc(100% - 16px);
+    align-items: center;
+    margin: 20px auto; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    background-color: white;
+    font-family: "Open Sans", serif;
+    text-decoration: none; /* Hide images that are outside the container */
+}
+
+/* Slider wrapper that will hold the images */
+.slider {
+    display: flex;
+    transition: transform 0.5s ease-in-out; /* Smooth transition */
+}
+
+/* Image styling */
+.slider img {
+    width: auto;
+    height: 189px;
+    object-fit: cover; /* Ensures the image covers the container */
+}
