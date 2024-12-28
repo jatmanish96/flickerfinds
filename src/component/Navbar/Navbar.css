@@ -173,3 +173,22 @@
     text-decoration: none;
     color: #171717;
   }
+
+  .user-login{
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    border-bottom: 1px solid grey;
+    margin-left: 4px;
+    margin-right: 4px;
+  }
+  .user-login a{
+    color: blue;
+  }
+  .user-login a:hover{
+    color: #ff9f00;
+  }
+
+  .user-create{
+    margin-left: 20px;
+  }

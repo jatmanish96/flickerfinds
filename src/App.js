@@ -8,6 +8,7 @@ import OrdersPage from './Pages/Orders/OrdersPage';
 import CategoryCard from './component/CategoryCard/CategoryCard';
 import LoginPage from './Pages/Login/LoginPage';
 import Footer from './component/Footer/Footer';
+import SignUpPage from './Pages/SignUp/SignUpPage';
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
     <Routes>
       <Route path="/"></Route>
       <Route path='/login' element={<LoginPage/>}/>
+      <Route path='/signup' element={<SignUpPage/>}/>
       <Route path="/products"  element={<ProductsPage/>} />
       <Route path="/categories" element={<CategoriesPage/>} />
       <Route path="/orders"  element={<OrdersPage/>} />

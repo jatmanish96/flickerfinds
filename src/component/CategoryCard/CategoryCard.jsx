@@ -14,7 +14,11 @@ const CategoryCard = () => {
     const location = useLocation();
     // Check if the current route is "/login"
     const isLoginRoute = location.pathname === "/login";
+    const isSignUpRoute = location.pathname === "/signup";
     if(isLoginRoute){
+        return null;
+    }
+    if(isSignUpRoute){
         return null;
     }
 

@@ -67,6 +67,10 @@ const Navbar = () => {
          {/* Dropdown menu for Login */}
         {isLoginDropdownOpen && (
             <div className="login-dropdown" onMouseEnter={handleLoginHover}  onMouseLeave={handleLoginLeave} >
+              <Link to="/signup"><div className="user-login">
+              <div className="user-create">New Customer?</div>
+              <div><a >Sign Up</a></div>
+              </div></Link>
               <ul>
                 <li><Link to="/profile" className="dropdown-item">
                 <div className="dropdownitem" ><FaRegUserCircle/>My Profile</div></Link></li>

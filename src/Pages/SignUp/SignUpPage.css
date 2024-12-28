@@ -1,0 +1,110 @@
+/* Container to center the content */
+.signup-container {
+    display: flex;
+    margin: 16px auto 0;
+    width: 840px;
+    min-height: 350px;
+    position: relative;
+    max-width: 100%;
+    background-color: #fff;
+    border-radius: 8px; /* Optional: for rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: for subtle shadow */
+}
+
+
+
+/* Left Section with Dark Blue Background */
+.signup-left {
+    width: 40%; /* 40% width for the left section */
+    background-color: #002f6c;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    position: relative;
+}
+
+.span {
+    margin-left: 0%;
+    font-size: 2rem; /* Increase text size */
+    font-weight: bold;
+    position: absolute;
+    top: 20px; /* Place it 20px from the top */
+    left: 20px; /* Place it 20px from the left */
+    margin: 0; /* Remove default margin */
+}
+
+.span-item-1{
+    margin-left: 0%;
+    position: absolute;
+    top: 70px; /* Place it 20px from the top */
+    left: 20px; /* Place it 20px from the left */
+    margin: 0; 
+}
+.span-item-2{
+    margin-left: 0%;
+    position: absolute;
+    top: 95px; /* Place it 20px from the top */
+    left: 20px; /* Place it 20px from the left */
+    margin: 0; 
+}
+
+/* Right Section with input fields */
+.signup-right {
+    width: 60%; /* 60% width for the right section */
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.signup-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px; /* Space between form elements */
+   
+}
+
+.input-group {
+    display: flex;
+    flex-direction: column;
+    gap: 5px; /* Space between label and input */
+}
+
+#username , #password ,#firstname,#lastname,#email {
+    padding: 10px;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    width: auto; /* Set width to 100% to make it responsive */
+}
+
+.signup-button-container{
+    display: flex;
+    justify-content: center;
+}
+.signup-buttoncontainer{
+    padding: 10px 20px;
+    font-size: 1.2rem;
+    background-color: #002f6c; /* Matching left section's color */
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+/* Styles for the password input */
+
+.signup-img{
+    position: absolute;
+    bottom: 20px; /* Place the image 20px from the bottom */
+    left: 40%;
+    transform: translateX(-50%); /* Center the image horizontally */
+    max-width: 100px; /* Adjust the image size as needed */
+    height: auto;
+}
+
+.signup-img img{
+    width: 130px;
+    height: 130px;
+}
